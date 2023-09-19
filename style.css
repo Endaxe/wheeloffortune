@@ -1,0 +1,36 @@
+:root {
+  --base-font: sans-serif;
+}
+
+.container {
+  width: min(80ch, 100vw - 4rem);
+  margin-inline: auto;
+}
+
+.region {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+body {
+  font-family: var(--base-font);
+  font-size: 1.2rem;
+}
+
+
+.spin-stop{
+  animation-play-state: paused;
+}
+
+.spin-it {
+  animation: spin-animation 0.8s ease-in-out infinite;
+}
+
+@keyframes spin-animation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
